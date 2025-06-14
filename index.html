@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лира v3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Лира: ИИ-память</h1>
+
+    <div class="log-section">
+      <textarea id="lira-log" readonly placeholder="Здесь будет лог взаимодействия..."></textarea>
+    </div>
+
+    <div class="input-section">
+      <input type="text" id="task-input" placeholder="Введите задачу или команду..." />
+      <button onclick="handleInput()">Ввод</button>
+    </div>
+
+    <div class="file-section">
+      <button onclick="createFile()">📄 Новый файл</button>
+      <button onclick="listFiles()">📁 Показать файлы</button>
+      <ul id="file-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="file-manager.js"></script>
+</body>
+</html>
